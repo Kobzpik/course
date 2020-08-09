@@ -1,87 +1,85 @@
 /********** Base styles **********/
 * {
-    box-sizing: border-box;
-    margin: 10px;
+  box-sizing: border-box;
+  margin: 10px;
+}
+h1 {
+  margin-bottom: 20px;
+}
+
+p {
+  border: 2px solid black;
+  background-color: #a4a7a0;
+  text-align: left;
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: white;
+  margin: 5px;
+ 
+
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Desktop devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1,.col-lg-2,.col-lg-3 {
+    float: left;
   }
-  h1 {
-    margin-bottom: 20px;
+  .col-lg-1 {
+    width: 31%;
   }
-  
-  p {
-    border: 2px solid black;
-    background-color: #a4a7a0;
-    text-align: right;
+  .col-lg-2 {
+    width: 31%;
+  }
+   .col-lg-3 {
+    width: 31%;
+  }
+ 
+}
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-lg-1,.col-lg-2,.col-lg-3 {
+      float: left;
+    }
+    .col-lg-1 {
+      width:45%;
+    }
+    .col-lg-2 {
+      width: 45%;
+    }
+     .col-lg-3 {
+      width: 95%;
+    }
+   
+}
+
+ /********** Mobile devices only **********/
+ @media (max-width: 767px) {
+  .col-lg-1,.col-lg-2,.col-lg-3 {
+    float: left;
+  }
+  .col-lg-1 {
+    width:90%;
+  }
+  .col-lg-2 {
     width: 90%;
-    height: 150px;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: Helvetica;
-    color: white;
+  }
+   .col-lg-3 {
+    width: 90%;
+  }
    
+}
 
-  }
-  
-  /* Simple Responsive Framework. */
-  .row {
-    width: 100%;
-  }
-  
-  /********** Desktop devices only **********/
-  @media (min-width: 992px) {
-    .col-lg-1,.col-lg-2,.col-lg-3 {
-      float: left;
-    }
-    .col-lg-1 {
-      width: 31%;
-    }
-    .col-lg-2 {
-      width: 31%;
-    }
-     .col-lg-3 {
-      width: 31%;
-    }
-   
-  }
-  
-  /********** Tablet devices only **********/
-  @media (min-width: 768px) and (max-width: 991px) {
-    .col-lg-1,.col-lg-2,.col-lg-3 {
-        float: left;
-      }
-      .col-lg-1 {
-        width:45%;
-      }
-      .col-lg-2 {
-        width: 45%;
-      }
-       .col-lg-3 {
-        width: 95%;
-      }
-     
-  }
+/**********style header************/
+h1{
+    text-align: center;
 
-   /********** Mobile devices only **********/
-   @media (max-width: 767px) {
-    .col-lg-1,.col-lg-2,.col-lg-3 {
-      float: left;
-    }
-    .col-lg-1 {
-      width:90%;
-    }
-    .col-lg-2 {
-      width: 90%;
-    }
-     .col-lg-3 {
-      width: 90%;
-    }
-     
-  }
-
-  /**********style header************/
-  h1{
-      text-align: center;
-
-  }
-
-  
-  
+}
